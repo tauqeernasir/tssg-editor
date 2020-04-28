@@ -42,7 +42,7 @@
   color: royalblue;
 }
 
-.how-to-guide p code {
+.how-to-guide p code, .how-to-guide ul li code {
   background: #38a169;
   color: white;
   border-radius: 4px;
