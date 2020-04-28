@@ -4,13 +4,7 @@
 <p align="center">
 	Write schema in an easy, concise and short way.<br>
 </p>
-<p align="center">
-	<a href="#">
-		<img src="https://img.shields.io/badge/Build-passing-green" alt="Build Status">
-	</a>
-</p>
 
----
 
 Consider the following object Schema of `User`:
 
