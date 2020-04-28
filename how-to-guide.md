@@ -60,12 +60,14 @@ You only need to mention the type of the property and it will be tranformed to `
 
 Following data types are support as of now:
 
--   string
--   number
--   integer
--   boolean
--   {} (shorthand for object type)
--   [] (shorthand for array)
+-   `string` (shorthand `s`)
+-   `number` (shorthand `n`)
+-   `integer` (shorthand `i`)
+-   `boolean` (shorthand `b`)
+-   `{}` (shorthand for object type)
+-   `[]` (shorthand for array)
+
+> Mark a field `required` with `!` sign
 
 ### More Examples
 
