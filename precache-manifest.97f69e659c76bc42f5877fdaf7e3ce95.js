@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "789d9553dd9b71950788fa200798b27d",
+    "revision": "17ae06a843eabb587ceb760d432ecdb6",
     "url": "/tssg-editor/index.html"
   },
   {
