@@ -19,7 +19,7 @@ export const Header = (props: HeaderProps): ReactElement => {
               Alpha
             </Badge>
             <Heading size={"xs"} color={"black.200"}>
-              The Swagger Schema Grammar
+              The Swagger Schema Generator
             </Heading>
           </Flex>
           <Text>Write schema in an easy, concise and short way</Text>
