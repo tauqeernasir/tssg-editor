@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.tssg-editor {
+  border: none;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.CodeMirror {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 16px;
+}
+
+.how-to-guide p {
+  margin-bottom: 10px;
+}
+
+.how-to-guide pre {
+  background: #1a202c;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.how-to-guide ul {
+  margin-left: 40px;
+}
+
+.how-to-guide h3 {
+  font-size: 18px;
+}
+
+.how-to-guide h3,
+.how-to-guide h4 {
+  color: white;
+  padding: 10px;
+  margin: 10px auto;
+  background: royalblue;
+  text-align: center;
+  font-weight: bold;
+}
+
+.how-to-guide p strong {
+  color: royalblue;
+}
+
+.how-to-guide p code {
+  background: #38a169;
+  color: white;
+  border-radius: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.how-to-guide blockquote {
+  background: #eee;
+  border-left: 8px solid royalblue;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.how-to-guide blockquote p {
+  padding: 0;
+  margin: 0;
 }
