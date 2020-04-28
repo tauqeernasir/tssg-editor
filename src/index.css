@@ -24,6 +24,12 @@
   margin-left: 40px;
 }
 
+
+.how-to-guide h1 {
+  font-size: 24px;
+  font-weight: bold !important;
+}
+
 .how-to-guide h3 {
   font-size: 18px;
 }

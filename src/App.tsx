@@ -31,16 +31,16 @@ export const App = (): ReactElement => {
   return (
     <>
       <Box h={navHeight} position={"relative"}>
-        <Header />
-        <Button
-          position={"absolute"}
-          top={5}
-          right={4}
-          onClick={onOpen}
-          size={"md"}
-        >
-          <Icon name={"info-outline"} mr={2} /> How to use?
-        </Button>
+        <Header
+          rightSection={
+            <Button
+              onClick={onOpen}
+              size={"md"}
+            >
+              <Icon name={"info-outline"} mr={2} /> How to use?
+            </Button>
+          }
+        />
       </Box>
       <Flex>
         <Box flex={1}>

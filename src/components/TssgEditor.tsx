@@ -19,10 +19,33 @@ type TssgEditorProps = {
   height: number;
 };
 
+const defualtValue = `/**
+* Example TSSG Syntax
+* Data Types:
+* \tstring | s, number | n, integer | i, boolean | b, [], {}
+* Marker:
+* \tuse \`!\` sign to mark an object property as required
+* Supported functions:
+* \toneOf, allOf, anyOf
+*
+* For more information read \`how to use\` guide.
+* This project is Work In Progress. It will soon support other swagger features.
+*/
+
+{
+\tname: s,
+\tage: !n,
+\taddress: {
+    \tcity: string,
+        country: !string
+    },
+    choices: oneOf(s, n, b),
+}`;
+
 export const TssgEditor = (props: TssgEditorProps): ReactElement => {
   const { setParsedData, width: wWidth, height: wHeight } = props;
 
-  const [value, setValue] = useState(`{\n\t\n}`);
+  const [value, setValue] = useState(defualtValue);
   const [parsedError, setParsedError] = useState("" as any);
 
   const navHeight = 80;

@@ -23,7 +23,7 @@ export const HowToGuideModal = (props: HowToGuideModalPropTypes) => {
   useEffect(() => {
     if (typeof fetch !== "undefined") {
       // @todo change url to file on REPO.
-      fetch("./how-to-guide.md")
+      fetch("./readme.md")
         .then((resp: Response) => resp.text())
         .then((data: any) => setData(data));
     }
@@ -48,7 +48,7 @@ export const HowToGuideModal = (props: HowToGuideModalPropTypes) => {
         <ModalCloseButton />
         <ModalBody>
           <Box className={"how-to-guide"}>
-            <ReactMarkdown source={data} />
+            <ReactMarkdown source={data} escapeHtml={false} />
           </Box>
         </ModalBody>
       </ModalContent>

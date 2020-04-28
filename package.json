@@ -17,13 +17,14 @@
     "react-codemirror2": "^7.1.0",
     "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.13.1",
+    "react-github-btn": "^1.1.1",
     "react-markdown": "^4.3.1",
     "react-scripts": "3.4.1",
     "typescript": "~3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf ./build && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
