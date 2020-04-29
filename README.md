@@ -301,15 +301,15 @@ Thanks goes to these wonderful people
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center">
+    <td align="center" style='margin: 5px;'>
         <a href="https://github.com/jskod"><img src="https://github.com/jskod.png" width="100px;" alt="Tauqeer Nasir"/><br /><sub><b>Tauqeer Nasir</b></sub></a><br />
         <a href="#" title="Code">💻</a> <a href="#maintenance" title="Maintenance">🚧</a> <a href="#documentation" title="Documentation">📖</a> <a href="#examples title="Examples">💡</a>
     </td>
-    <td align="center">
+    <td align="center"  style='margin: 5px;'>
         <a href="https://github.com/shrmaky"><img src="https://github.com/shrmaky.png" width="100px;" alt="Akshat Sharma"/><br /><sub><b>Akshat Sharma</b></sub></a><br />
-        <a href="#" title="Documentation">📖</a> <a href="#examples" title="Examples">💡</a> <a href="#maintenance" title="Maintenance">🚧</a></td>
-    <td align="center">
+        <a href="#" title="Code">💻</a> <a href="#" title="Documentation">📖</a> <a href="#examples" title="Examples">💡</a> <a href="#maintenance" title="Maintenance">🚧</a></td>
+    <td align="center"  style='margin: 5px;'>
         <a href="https://github.com/mingwho"><img src="https://github.com/mingwho.png" width="100px;" alt="Ming Hu"/><br /><sub><b>Ming Hu</b></sub></a><br />
-        <a href="#examples" title="Examples">💡</a> <a href="#maintenance" title="Maintenance">🚧</a></td>
+        <a href="#" title="Code">💻</a> <a href="#examples" title="Examples">💡</a> <a href="#maintenance" title="Maintenance">🚧</a></td>
   </tr>
 </table>
