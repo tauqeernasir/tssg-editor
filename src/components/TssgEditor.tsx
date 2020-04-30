@@ -1,6 +1,6 @@
 import { Controlled as CodeMirror } from "react-codemirror2";
 import React, { ReactElement, useCallback, useEffect, useState } from "react";
-import { Box } from "@chakra-ui/core/dist";
+import { Box, Button, Icon } from "@chakra-ui/core/dist";
 import debounce from "lodash.debounce";
 
 import { ssgToOASParser } from "tssg/dist/parsers/ssg";
@@ -19,7 +19,8 @@ type TssgEditorProps = {
   height: number;
 };
 
-const defualtValue = `/**
+const savedValue = window.localStorage.getItem("savedValue");
+const defaultValue = `/**
 * Example TSSG Syntax
 * Data Types:
 * \tstring | s, number | n, integer | i, boolean | b, [], {}
@@ -41,11 +42,12 @@ const defualtValue = `/**
     },
     choices: oneOf(s, n, b),
 }`;
+const savedOrDefaultValue = savedValue || defaultValue;
 
 export const TssgEditor = (props: TssgEditorProps): ReactElement => {
   const { setParsedData, width: wWidth, height: wHeight } = props;
 
-  const [value, setValue] = useState(defualtValue);
+  const [value, setValue] = useState(savedOrDefaultValue);
   const [parsedError, setParsedError] = useState("" as any);
 
   const navHeight = 80;
@@ -57,6 +59,7 @@ export const TssgEditor = (props: TssgEditorProps): ReactElement => {
         try {
           const parsed = ssgToOASParser(`(${value})`);
           setParsedData(parsed);
+          window.localStorage.setItem("savedValue", value);
           setParsedError("");
         } catch (e) {
           setParsedError(e.message);
@@ -67,6 +70,11 @@ export const TssgEditor = (props: TssgEditorProps): ReactElement => {
     ),
     []
   );
+
+  const resetToDefault = () => {
+    window.localStorage.setItem("savedValue", defaultValue);
+    setValue(defaultValue);
+  };
 
   useEffect(() => {
     parseAndSetValue(value);
@@ -87,6 +95,16 @@ export const TssgEditor = (props: TssgEditorProps): ReactElement => {
           }}
         />
       )}
+      <Box position="absolute" top={2} right={6} style={{ zIndex: 999 }}>
+        <Button
+          type="button"
+          size={"sm"}
+          variantColor={"blue"}
+          onClick={resetToDefault}
+        >
+          <Icon name="repeat" mr={2} /> Reset
+        </Button>
+      </Box>
       <CodeMirror
         editorDidMount={(codeMirror) => {
           codeMirror.setSize(wWidth / 2, wHeight - navHeight);
