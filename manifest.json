@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "TSSG Editor",
+  "name": "TSSG Editor for Swagger Schema generation",
   "icons": [
     {
       "src": "favicon.ico",
