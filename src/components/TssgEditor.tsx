@@ -102,7 +102,7 @@ export const TssgEditor = (props: TssgEditorProps): ReactElement => {
           variantColor={"blue"}
           onClick={resetToDefault}
         >
-          <Icon name="repeat" mr={2} /> Reset to default code
+          <Icon name="repeat" mr={2} /> Reset
         </Button>
       </Box>
       <CodeMirror
