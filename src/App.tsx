@@ -1,8 +1,5 @@
 import React, { ReactElement, useEffect, useState } from "react";
-import { Grid, Box, Button, Flex } from "@chakra-ui/core";
-
-import "codemirror/lib/codemirror.css";
-import "codemirror/theme/material.css";
+import { Box, Button, Flex } from "@chakra-ui/core";
 
 import "./index.css";
 
@@ -33,10 +30,7 @@ export const App = (): ReactElement => {
       <Box h={navHeight} position={"relative"}>
         <Header
           rightSection={
-            <Button
-              onClick={onOpen}
-              size={"md"}
-            >
+            <Button onClick={onOpen} size={"md"}>
               <Icon name={"info-outline"} mr={2} /> How to use?
             </Button>
           }

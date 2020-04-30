@@ -1,6 +1,6 @@
 import { Controlled as CodeMirror } from "react-codemirror2";
 import React, { ReactElement, useCallback, useEffect, useState } from "react";
-import { Box, Button, Icon } from "@chakra-ui/core/dist";
+import { Box, Button, Icon, Stack } from "@chakra-ui/core/dist";
 import debounce from "lodash.debounce";
 
 import { ssgToOASParser } from "tssg/dist/parsers/ssg";
@@ -12,6 +12,7 @@ import "codemirror/mode/javascript/javascript";
 
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/material.css";
+import LoadExamples from "./LoadExamples";
 
 type TssgEditorProps = {
   setParsedData?: any;
@@ -96,14 +97,21 @@ export const TssgEditor = (props: TssgEditorProps): ReactElement => {
         />
       )}
       <Box position="absolute" top={2} right={6} style={{ zIndex: 999 }}>
-        <Button
-          type="button"
-          size={"sm"}
-          variantColor={"blue"}
-          onClick={resetToDefault}
-        >
-          <Icon name="repeat" mr={2} /> Reset
-        </Button>
+        <Stack direction={"row"}>
+          <Button
+            type="button"
+            size={"sm"}
+            variantColor={"blue"}
+            onClick={resetToDefault}
+          >
+            <Icon name="repeat" mr={2} /> Reset
+          </Button>
+          <LoadExamples
+            onLoadExample={(value): void => {
+              setValue(value);
+            }}
+          />
+        </Stack>
       </Box>
       <CodeMirror
         editorDidMount={(codeMirror) => {
