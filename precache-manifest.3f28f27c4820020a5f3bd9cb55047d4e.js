@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c717d7b352099174f088ebc131d8b333",
+    "revision": "7988e4430eebe4b4d80951f48f2d0607",
     "url": "/tssg-editor/index.html"
   },
   {
-    "revision": "621d0f17b3722faee2f9",
+    "revision": "a3a5aea97bb188c6768d",
     "url": "/tssg-editor/static/css/2.9df7aa81.chunk.css"
   },
   {
-    "revision": "ba37876ebb7dd3a8d59d",
+    "revision": "5ca296c81025eb8c411c",
     "url": "/tssg-editor/static/css/main.0c6f7cd8.chunk.css"
   },
   {
-    "revision": "621d0f17b3722faee2f9",
-    "url": "/tssg-editor/static/js/2.ae9f31d8.chunk.js"
+    "revision": "a3a5aea97bb188c6768d",
+    "url": "/tssg-editor/static/js/2.5cc64f6b.chunk.js"
   },
   {
     "revision": "8e78d2827888b2a1a1feb7eb48e0f6ce",
-    "url": "/tssg-editor/static/js/2.ae9f31d8.chunk.js.LICENSE.txt"
+    "url": "/tssg-editor/static/js/2.5cc64f6b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ba37876ebb7dd3a8d59d",
-    "url": "/tssg-editor/static/js/main.bc1c6afc.chunk.js"
+    "revision": "5ca296c81025eb8c411c",
+    "url": "/tssg-editor/static/js/main.067247bc.chunk.js"
   },
   {
     "revision": "4e068bc7e3ae73bcea75",
