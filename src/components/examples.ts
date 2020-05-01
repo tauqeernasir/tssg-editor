@@ -54,3 +54,7 @@ export const mixedSchemaExample = `{
     commentsCount: i,
   }]
 }`;
+
+export const enumsExample = `{
+    colors: enumOf(string, "red", "green", "blue"),
+}`;
