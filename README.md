@@ -111,7 +111,7 @@ Following data types are support as of now:
 
 **Required Properties**
 
-Let take the above example again, and add some properties as required.
+Let's take the above example again, and add some properties as required.
 
 ```json
 {
@@ -189,7 +189,7 @@ Consider this simple example which accepts `data` property of type `array of str
 }
 ```
 
-Above schema can be written in TSSG as follow:
+Above schema can be written in TSSG as follows:
 
 ```
 {
@@ -289,8 +289,33 @@ Above schema can be written in TSSG as follow:
 }
 ```
 
-> If `data` property is needed to be required, just mark that required using `!` sign.
+> If `data` property is required, just mark that required using `!` sign.
 
+**Enums**
+
+You can use the enum keyword to specify possible values of a request parameter or a model property. For example, consider the following schema:
+
+```json
+{
+    "type": "object",
+    "properties": {
+        "colors": {
+            "type": "string",
+            "enum": [
+                "red",
+                "green",
+                "blue"
+            ]
+        }
+    }
+}
+```
+Above schema can be written in TSSG as follows:
+```
+{
+    colors: enumOf(string, "red", "green", "blue"),
+}
+```
 ## Contributors ✨
 
 Thanks goes to these wonderful people

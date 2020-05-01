@@ -17,6 +17,7 @@ import {
   mixedSchemaExample,
   objectSchemaExample,
   simpleExample,
+  enumsExample
 } from "./examples";
 
 type ExampleListItemProps = {
@@ -90,6 +91,10 @@ function LoadExamples(props: LoadExamplesProps) {
               <ExampleListItem
                 title={"Simple using Mixed data types"}
                 onClick={() => loadExample(mixedSchemaExample)}
+              />
+              <ExampleListItem
+                  title={"Simple Schema with Enums"}
+                  onClick={() => loadExample(enumsExample)}
               />
             </Stack>
           </ModalBody>
