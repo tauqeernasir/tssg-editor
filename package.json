@@ -10,7 +10,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "codemirror": "^5.53.2",
+    "codemirror": "^5.58.2",
     "emotion-theming": "^10.0.27",
     "lodash.debounce": "^4.0.8",
     "react": "^16.13.1",
